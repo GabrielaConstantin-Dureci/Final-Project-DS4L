@@ -1,8 +1,0 @@
-if(!"devtools" %in% rownames(installed.packages())) install.packages("devtools")
-devtools::install_github("crsh/papaja")
-
-install.packages("installr")
-
-library(installr)
-
-updateR()

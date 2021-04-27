@@ -46,13 +46,11 @@ class: center, middle, inverse, title-slide
 
 - Data
 
---
-
-- Visualization of the Data and Analysis
+ - Visualization of the Data 
 
 --
 
-- Results
+- Preliminary Analysis
 
 --
 
@@ -179,8 +177,8 @@ More research that includes gender-non-conforming participants is highly needed!
 - In order to assess participants' CS frequency, they will take the Assessment of Code-Switching Experience Survey (ACSES; Blackburn, 2013)
  - They will be divided into *High* frequency code-switchers and *Low* frequency code-switchers
 
-- Participants' proficiency will be assessed via the Boston Naming Test (BNT; Kaplan, Goodglass, and Weintraub, 1983) in both Romanian and Spanish. 
- - The BNT contains 60 outline drawings of objects and animals, which I will divide into two blocks, a Romanian one and a Spanish one, with thirty images per block (see Guzzardo-Tamargo et al., 2016, for a similar methodology regarding the administration of the BNT).
+- Participants' proficiency will be assessed via the Boston Naming Test (BNT; Kaplan, Goodglass, and Weintraub, 1983) in Romanian. 
+ - The BNT contains 60 outline drawings of objects and animals.
  
 - Participants will also complete a **Language History Questionnaire**.
 
@@ -236,7 +234,7 @@ More research that includes gender-non-conforming participants is highly needed!
 
 --
 
-The dataset looked like this:
+The dataset looks like this:
 
 --
 
@@ -328,25 +326,6 @@ These are the models that I am fitting.
 
 - mod_int&lt;-glm(Frequency_CS ~ 1 + Proficiency*Gender,family= binomial(link="logit"), data = Data)
 
-
----
-#Preliminary Results
-
---
-
-```
-## Analysis of Deviance Table
-## 
-## Model 1: Frequency_CS ~ 1
-## Model 2: Frequency_CS ~ 1 + Proficiency
-## Model 3: Frequency_CS ~ 1 + Proficiency + Gender
-##   Resid. Df Resid. Dev Df Deviance  Pr(&gt;Chi)    
-## 1       186     247.30                          
-## 2       185     236.00  1  11.2980 0.0007759 ***
-## 3       184     234.59  1   1.4035 0.2361419    
-## ---
-## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-```
 ---
 
 #Conclusion
