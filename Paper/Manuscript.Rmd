@@ -108,7 +108,7 @@ Data %>%
 ```
 
 # Discussion
-This study looked at Romanian-Spanish bilinguals' frequency of codeswitching as a function of proficiency in Romanian, gender, and generation. 
+This study looked at Romanian-Spanish bilinguals' frequency of codeswitching as influenced by their proficiency in Romanian, their gender identity, and their generation status. 
 
 \newpage
 

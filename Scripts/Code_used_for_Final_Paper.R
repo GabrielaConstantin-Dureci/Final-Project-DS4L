@@ -29,9 +29,6 @@ mod_inc<-glm(Frequency_CS ~ 1 + Proficiency*Gender,family= binomial(link="logit"
 
 anova(mod_null,mod_proficiency, mod_gender, mod_inc, test = "Chisq")
 
+#Best model is mod_proficiency
 
-summary(mod_null)
-mean(Data$Frequency_CS)
 summary(mod_proficiency)
-summary(mod_gender)
-summary(mod_generation)

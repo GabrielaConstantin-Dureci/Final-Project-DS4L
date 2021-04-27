@@ -96,10 +96,19 @@ Lastly, I used `r cite_r("r-references.bib")` for all the analyses.
 
 # Results
 
+The two panels in *Figure 1* show the CS frequency of participants as a function of Romanian language proficiency, as well as generation (G1 or G2) and gender (female or male). 
+The model that examined frequency of CS as a factor of proficiency provided the best fit. Moreover, the model revealed an effect of proficiency with p=0.0007759.
+A visual analysis of the plots shows that for G1 participants, frequency of CS decreased as proficiency increased for both female and male participants. However, for G2 male participants, frequency of CS increased with proficiency, while for G2 female participants it decreased. 
 
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+Data %>% 
+  ggplot(.,aes(x=Proficiency , y = Frequency_CS, color = Gender)) +
+  facet_grid(.~Generation)+
+  geom_smooth(method= "glm", method.args=list(family="binomial"))
+```
 
 # Discussion
-
+This study looked at Romanian-Spanish bilinguals' frequency of codeswitching as influenced by their proficiency in Romanian, their gender identity, and their generation status. 
 
 \newpage
 

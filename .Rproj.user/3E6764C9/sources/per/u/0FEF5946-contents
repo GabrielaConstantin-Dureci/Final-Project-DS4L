@@ -1,0 +1,9 @@
+remove.packages("papaja")
+
+install.packages("papaja")
+
+if(!"tinytex" %in% rownames(installed.packages())) install.packages("tinytex")
+
+tinytex::install_tinytex()
+if(!"devtools" %in% rownames(installed.packages())) install.packages("devtools")
+devtools::install_github("crsh/papaja")
