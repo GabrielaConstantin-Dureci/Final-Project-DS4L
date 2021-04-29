@@ -264,7 +264,7 @@ For frequency of CS, I coded *frequent switchers* with 1 and *infrequent switche
  ]
  
 .pull-right[
-- 85 participants for G1
+- 85 participants for G2
  - 31 female-identifying participants:
      - 23 - High Frequency CS
      - 8 - Low Frequency CS
@@ -302,7 +302,7 @@ These are the models that I am fitting.
 
 - mod_gender<- glm(Frequency_CS ~ 1 + Proficiency + Gender, family= binomial(link="logit"), data = Data)
 
-- mod_int<-glm(Frequency_CS ~ 1 + Proficiency*Gender,family= binomial(link="logit"), data = Data)
+- mod_inc<-glm(Frequency_CS ~ 1 + Proficiency*Gender,family= binomial(link="logit"), data = Data)
 
 ---
 
