@@ -18,7 +18,7 @@ draft             : no
 
 documentclass     : "apa6"
 classoption       : "man"
-output            : papaja::apa6_word
+output            : papaja::apa6_pdf
 ---
 
 ```{r setup, include = FALSE}
@@ -37,7 +37,7 @@ knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
 
 - In this paper, I am focusing on a specific bilingual community, namely Romanian-Spanish bilinguals in Spain. Although there is a large community of Romanians in Spain, which leads to prevalent Romanian-Spanish bilingualism, studies on Romanian-Spanish bilinguals in Spain are scarce. 
 
-- Code-switching (CS) is a common practice in bilingual communities across the world. In this paper, I am defining CS as the practice of using more than one language or language variety in discourse (see Poplack, 1980). 
+- Code-switching (CS) is a common practice in bilingual communities across the world. In this paper, I am defining CS as the practice of using more than one language or language variety in discourse. 
 
 - Labov' Gender Paradox is a sociolinguistic phenomenon which states that Women conform more closely than men to sociolinguistic norms that are overtly prescribed, but conform less than men when they are not.
 Women are more likely to use prestige forms and avoid stigmatized variants than men for a majority of linguistic variables, but that they are also more likely to lead language change by using innovative forms of variables.
@@ -57,7 +57,7 @@ In this section, I report my sample, materials, procedure, and data analysis.
 ## Participants
 
 One hundred eighty seven participants (72 female-identifying) completed this study. Since one of the research questions of this study targets bilinguals' generation status, the participants were further categorized in their respective groups. Specifically, one hundred and two participants belonged to the first generation (G1) group (41 female-identifying) and eighty five formed the second generation (G2) group (54 male-identifying). 
-Generation 1 (G1) bilinguals were born in Romania and immigrated to Spain as adults (i.e., after age 18) and Generation 2 (G2) bilinguals were born to at least one G1 parent. Therefore, G2 bilinguals could have either been born in Spain or born in Romania and immigrated to Spain before age 9 (see Torres & Potowski, 2016).
+Generation 1 (G1) bilinguals were born in Romania and immigrated to Spain as adults (i.e., after age 18) and Generation 2 (G2) bilinguals were born to at least one G1 parent. Therefore, G2 bilinguals could have either been born in Spain or born in Romania and immigrated to Spain before age 9 (see @inbook).
 
 Descriptive statistics for the participant sample are offered in Table 1.
 
@@ -78,9 +78,9 @@ knitr::kable(head(Descriptive), format="pandoc")
 
 
 ## Materials
-- The short version of the Assessment of Code-Switching Experience Survey (ACSES; Blackburn, 2013) was used to assess participants' CS frequency. After reviewing their results on the ACSES, participants were further categorized as High frequency code-switchers (117 participants; 46 female-identifying; 52 G1) and Low frequency switchers (70 participants; 44 male-identifying; 20 G2).
+- The short version of the Assessment of Code-Switching Experience Survey (ACSES; @phdthesis) was used to assess participants' CS frequency. After reviewing their results on the ACSES, participants were further categorized as High frequency code-switchers (117 participants; 46 female-identifying; 52 G1) and Low frequency switchers (70 participants; 44 male-identifying; 20 G2).
 
-- Participants' proficiency was assessed via the Boston Naming Test (BNT; Kaplan, Goodglass, and Weintraub, 1983) in Romanian.The BNT contains 60 outline drawings of objects and animals.
+- Participants' proficiency was assessed via the Boston Naming Test (BNT; @article) in Romanian.The BNT contains 60 outline drawings of objects and animals.
 
 - Participants also completed a Language History Questionnaire in order to gather socio-biographical data.
 
@@ -97,7 +97,7 @@ Lastly, I used `r cite_r("r-references.bib")` for all the analyses.
 # Results
 
 The two panels in *Figure 1* show the CS frequency of participants as a function of Romanian language proficiency, as well as generation (G1 or G2) and gender (female or male). 
-The model that examined frequency of CS as a factor of proficiency provided the best fit. Moreover, the model revealed an effect of proficiency with p=0.0007759.
+The model that examined frequency of CS as a factor of proficiency provided the best fit (with Pr(>Chi) = 0.0007759).
 A visual analysis of the plots shows that for G1 participants, frequency of CS decreased as proficiency increased for both female and male participants. However, for G2 male participants, frequency of CS increased with proficiency, while for G2 female participants it decreased. 
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
